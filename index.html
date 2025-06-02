@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Aube Camerounaise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo NAC" class="logo">
+        <h1>Nouvelle Aube Camerounaise / New Cameroonian Dawn</h1>
+        <nav>
+            <button onclick="switchLang('fr')">FR</button>
+            <button onclick="switchLang('en')">EN</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fr">
+            <h2>Bienvenue sur le site officiel du NAC</h2>
+            <p>Nous représentons une jeunesse debout pour un Cameroun nouveau, libre, et uni.</p>
+        </section>
+        <section id="en" style="display:none;">
+            <h2>Welcome to the official website of the NCD</h2>
+            <p>We represent a rising youth for a new, free, and united Cameroon.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NAC - Nouvelle Aube Camerounaise</p>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('fr').style.display = (lang === 'fr') ? 'block' : 'none';
+            document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
